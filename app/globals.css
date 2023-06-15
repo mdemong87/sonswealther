@@ -8,20 +8,57 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+.containers {
+  width: 95% !important;
+}
+
+.borderB {
+  border-bottom: 1px solid #fff;
+}
+
+.footerlogo {
+  height: 130px;
+  width: 130px;
+}
+
+.mrgin {
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+  margin-bottom: 5px !important;
+  margin-right: 5px !important;
+  height: 78%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tras {
+  transform: translateX(-85%);
+  width: 300px;
+}
+
+.layout {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas:
+    "sideber content sideber"
+  ;
 }
